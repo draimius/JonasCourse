@@ -1,0 +1,108 @@
+body {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  margin: 30px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+/* top section withh strt/reset button and the num range wwe're palying with */
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button {
+  font-family: "Press Start 2P", cursive;
+  color: rgb(34, 34, 34);
+  width: 150px;
+  height: 55px;
+  font-size: 1rem;
+}
+#navbar p {
+  justify-self: flex-end;
+  margin-top: 0;
+}
+/* basicly jsut title of game  */
+h1 {
+  text-align: center;
+  margin: 60px 0px 60px 0px;
+  font-size: 3rem;
+}
+/* center qustion mark revead to correctly guessed number */
+#reveal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 100px;
+}
+h2 {
+  font-size: 5rem;
+  margin: 0;
+  background-color: white;
+  color: rgb(34, 34, 34);
+  padding: 35px 50px;
+}
+.line {
+  margin: 0;
+  padding: 5px 100%;
+  background-color: white;
+  width: auto;
+}
+/* input for guess and submit button */
+#guess {
+  /*all incompass*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  box-sizing: border-box;
+}
+#guess form {
+  /*for input and button only*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+form input {
+  /*for input only*/
+  background-color: rgb(34, 34, 34);
+  color: white;
+  height: 90px;
+  width: 200px;
+  border: solid white 2px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+form button {
+  margin-top: 25px;
+}
+
+/* hint plus scores track */
+.scores {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 25px 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#hint {
+  margin: 0 0 50px 0;
+}
+.scores h3 {
+  margin-top: 10px;
+}
+
+/* addig class list */
+.revealWide {
+  padding: 35px 100px;
+}
+
+
+
+/* ---------------------------------------------------------jonas solution */

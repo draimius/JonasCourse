@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/pigGame.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <button id="reset" class="overlayButtons">New Game</button>
+    <main>
+      <section class="ying active">
+        <h1>Player 1</h1>
+
+        <h2>0</h2>
+        <div>
+          <p>current</p>
+          <p class="current">0</p>
+        </div>
+      </section>
+
+      <i id="die1" class="gg-dice-1 hidden"></i>
+      <i class="gg-dice-2 hidden"></i>
+      <i class="gg-dice-3 hidden"></i>
+      <i class="gg-dice-4 hidden"></i>
+      <i class="gg-dice-5 hidden"></i>
+      <i class="gg-dice-6 hidden"></i>
+
+      <button id="roll" class="overlayButtons">roll dice</button>
+      <button id="hold" class="overlayButtons">hold</button>
+      <section class="yang active reset">
+        <h1>Player 2</h1>
+        <h2>0</h2>
+        <div>
+          <p>current</p>
+          <p class="current">0</p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="/javascript/pigGame.js"></script>
+</html>
+<!-- alrithy so got all html down still wokign as to how we'll be adding those additional buttins thinking may do position absolute then jsut move into place over elements thats ok  -->
+<!-- now css gonna get the game board in place then work on buttons  
+    jsut relized will also need overlay showing die in center as well have coresposind to each num rolled
+        for this can creat a div then white background then jsut apply classes as need one for each num on dice coresponding drawing-->
+<!-- then move on to the logic  -->

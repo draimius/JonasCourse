@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+}
+body {
+  /* background-color: rgb(51, 51, 51); */
+  background: linear-gradient(to top left, rgb(1, 128, 50), rgb(165, 238, 136));
+  font-family: Courier New, Courier, monospace;
+  /* margin-top: 30px; */
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+  /* display: none; */
+}
+button {
+  padding: 10px 20px;
+  font-weight: 800;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+/*OVERLAY*/
+section {
+  /* is this display is none it takes all other withi them / 
+  may still need individual ones this way only correspoiding shows*/
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.479);
+  position: fixed;
+  display: none;
+  backdrop-filter: blur(2px);
+}
+/*EVERYTHING FORT THE WINDOW POPUPS*/
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  left: 22.5%;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  border: blanchedalmond 2px solid;
+  background-color: white;
+  padding: 10px 20px 50px 40px;
+  display: none;
+}
+.modal h1 {
+  margin-bottom: 20px;
+  padding-top: 22px;
+  /* display: none; */
+}
+.modal p {
+  margin-right: 10px;
+  /* display: none; */
+}
+.modal div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* display: none; */
+}
+.modal button {
+  align-self: flex-start;
+  padding: 0 0 50px 0;
+  background-color: white;
+  color: rgb(88, 88, 88);
+  font-size: 1.2rem;
+  /* display: none; */
+}
+button:focus {
+  outline: none;
+}
+
+/* THE ADDED REAVEAL CLASS */
+.reveal {
+  display: block;
+}
+/* JONAS SOLUTION */
+/*  off the bat he started with a hidden class applied this on all the elemenes that be hidden for each article or pop up (so they start hidden ofcourse)
+    he starts it hidden with element already having class then to reveal simply removes the class from element
+    then to hide again adds it back on 
+        we kinda did same but dif we also started hidden but that applyed to elements already not via a class
+            then we added calss that would make it visible then removed that class to toggles 
+            i basicly used more thatn needed kinda but same resuts right jsut something to consider for next time most effective way for situation
+hmm i add a class to reveal window but he actully removes to do that and alsio does oppisite to hide i remove a class and he adds one
+
+
+
+
+
+
+*/

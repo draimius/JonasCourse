@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/guessmynumber.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>GuessMyNumber</title>
+  </head>
+  <body>
+    <!-- top section withh strt/reset button and the num range wwe're palying with -->
+    <div id="navbar">
+      <button type="reset" id="reset">Again!</button>
+      <p>
+        (Between <span class="num-range">1</span> and
+        <span class="num-range">20</span>)
+      </p>
+    </div>
+    <!-- basicly jsut title of game -->
+    <h1>Guess My Number!</h1>
+    <!-- center qustion mark revead to correctly guessed number -->
+    <section id="reveal">
+      <div class="line"></div>
+      <h2 id="revealText">&quest;</h2>
+      <div class="line"></div>
+    </section>
+    <!-- input for guess and submit button -->
+    <section id="guess">
+      <form>
+        <input type="number" min="0" max="20" />
+        <button type="submit">Check!</button>
+      </form>
+      <!-- WITHHIN: section with hint and score trackings -->
+      <div class="scores">
+        <h3 id="hint">Start Guessing...</h3>
+        <h3>Score: <span id="score">20</span></h3>
+        <h3>Highscore: <span id="highScore">0</span></h3>
+      </div>
+    </section>
+  </body>
+
+  <script src="../javascript/guessmynumber.js"></script>
+</html>
+
+<!-- satrt/again button top left (strats and resets whole game everything but the highscore resets) / then top right we have the number range -->
+<!-- below guess number title basicly -->
+<!-- center reminas a questionmark .till number is guessed coreclty then displays right number guessed -->
+<!-- left we have mefuis number input where we can type in our guess/ also has a up down arrow to change number -->
+<!-- below that we ahve a check button basicly submit butto that submits are guess for checking -->
+<!-- right we ahve our hint telling us wether our guess is either too high or too low -->
+<!-- below that we have our score starting at max num range and decresing by one every wrong guess / stops decresing when right num is guessed -->
+<!-- below that we have our highscore basicvly this stays till topped by higher score and stays there -->
+
+<!-- [DONE} 1. plan is first get all elements on screeen in as much simantic html as possible  -->
+<!-- [DONE} 2. apply aproprite classes and id as needed -->
+<!-- DOING!! 3. then we'll go over javascript plan bit more detail and break down -->
+
+
+
+
+
+<!-- ---------------------------------------------------------jonas solution -->
+
+<!-- <head>  also seemms came with file all made only javascript i had to do but no worry like the practice
+  <body>
+    <header>
+      <h1>guess my number?</h1>
+      <p>betweem 1 and 20</p>
+      <button>again</button>
+      <div>?</div>
+    </header>
+    <main>
+      <section class="left"> very much like how he seperated this knowing be semetrical but on seperat sides(left and right)
+        <input>
+        <button>check!</button>
+      </section>
+      <section class="right">
+        <p></p>
+        <p><span></span></p>
+        <p><span></span></p>
+      </section>
+    </main>
+    <script></script>
+  </body>
+</head> -->

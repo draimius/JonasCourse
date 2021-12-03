@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to top left, rgb(96, 21, 167), rgb(226, 95, 156));
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: oldlace solid 3px; */
+  width: 80%;
+  height: 50%;
+  /* width: 750px;
+  height: 500px; */
+  text-transform: uppercase;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: rgb(0, 0, 0) solid 1px; */
+  width: 100%;
+  height: 100%;
+  /* box-sizing: border-box; */
+}
+section h1 {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.3rem;
+  margin: 40px 0 0 0;
+  /* margin: 0; */
+}
+section button {
+}
+section h2 {
+  font-size: 4.5rem;
+  color: rgb(226, 95, 208);
+  margin: 0 0 80px 0;
+}
+section div {
+  /* border: rgb(11, 134, 62) solid 2px; */
+  width: 190px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(184, 59, 167);
+  color: white;
+  border-radius: 5px;
+}
+
+.current {
+  font-size: 1.5rem;
+}
+.ying {
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.yang {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 10px 10px 0px;
+}
+
+/*  NOW THE OVERLAY BUTTONS ----------------------*/
+#reset {
+  /* color: blue; */
+  /* position: absolute; */
+  /* padding: 10px 20px; */
+  /* remove later */
+  display: block;
+  top: 27%;
+}
+/* -----------------------------    dice display   ------------------------------- */
+/* .dice {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+
+  background-color: white;
+  top: 40%;
+}
+.dot {
+  display: block;
+  position: absolute;
+  background: black;
+  width: 15px;
+  height: 15px;
+  top: 43.7%;
+  border-radius: 50%;
+}
+#one {
+
+  display: block;
+  top: 44%;
+  left: 20%;
+  position: absolute;
+} */
+
+/* ------------------------------------------------------------ */
+#rollAndHold {
+  position: absolute;
+}
+#roll {
+  position: absolute;
+  top: 61.5%;
+}
+#hold {
+  position: absolute;
+  top: 67%;
+}
+/* hiding overlay elemnet aka the buttions and dice display */
+.overlayButtons {
+  /*this is for all button overlays*/
+  /* display: none; */
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  position: absolute;
+  border: none;
+  font-weight: bold;
+}
+/* dice's ------------------------------------ */
+/* dice 1 */
+.gg-dice-1 {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: white;
+  border-radius: 3px;
+  top: 40%;
+  /* display: none; */
+}
+.gg-dice-1::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background-color: rgb(184, 0, 0);
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 44%;
+  top: 43%;
+}
+/* dice 2 */
+.gg-dice-2 {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: white;
+  border-radius: 3px;
+  top: 40%;
+  /* display: none; */
+}
+
+.gg-dice-2::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  color: rgb(184, 0, 0);
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 13px;
+  top: 13px;
+  box-shadow: 60px 60px 0;
+}
+/* dice 3 */
+.gg-dice-3 {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: white;
+  border-radius: 3px;
+  top: 40%;
+  /* display: none; */
+}
+
+.gg-dice-3::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  color: rgb(184, 0, 0);
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 13px;
+  top: 13px;
+  box-shadow: 30px 30px 0, 60px 60px 0;
+}
+/* dice 3 */
+.gg-dice-4 {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: white;
+  border-radius: 3px;
+  top: 40%;
+  /* display: none; */
+}
+
+.gg-dice-4::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  color: rgb(184, 0, 0);
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 13px;
+  top: 13px;
+  box-shadow: 0 60px 0, 60px 0 0, 60px 60px 0;
+}
+/* dice 5 */
+.gg-dice-5 {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: white;
+  border-radius: 3px;
+  top: 40%;
+  /* display: none; */
+}
+
+.gg-dice-5::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  color: rgb(184, 0, 0);
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 13px;
+  top: 13px;
+  box-shadow: 0 60px 0, 60px 0 0, 60px 60px 0, 30px 30px 0;
+}
+/* dice 6 */
+.gg-dice-6 {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: white;
+  border-radius: 3px;
+  top: 40%;
+  /* display: none; */
+}
+
+.gg-dice-6::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  color: rgb(184, 0, 0);
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 13px;
+  top: 13px;
+  box-shadow: 0 30px 0, 0 60px 0, 60px 0 0, 60px 30px 0, 60px 60px 0;
+}
+button:focus {
+  outline: none;
+}
+.hidden {
+  display: none;
+
+/* trick for hiding and revealing is to not have those properties contracditing eachother in seperate clases (fighting for proority */
+/* one clase also sholud serve purpose to hide elements/ then simply add and remove class */
